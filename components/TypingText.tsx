@@ -45,7 +45,7 @@ export default function TypingText({ text, speed = 50 }: { text: string; speed?:
     }, [text, speed]);
 
     return (
-        <p id="introduction" className="text-gray-700">
+        <p id="introduction" className="text-slate-800">
             {/* The text will be typed here */}
         </p>
     );

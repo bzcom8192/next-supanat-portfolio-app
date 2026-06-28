@@ -1,158 +1,100 @@
-// Frontend
-// HTML
-// CSS
-// JavaScript
-// React
-// Next.js
-// Backend
-// Node.js
-// Express
-// PHP
-// Database
-// MySQL
-// PostgreSQL
-// Supabase
-// Tools
-// Git
-// GitHub
-// VS Code
-// Docker
-
 import Sidebar from "@/components/Sidebar";
 import SkillCard from "@/components/SkillCard";
-import { CodeXml, Cpu, Database, Toolbox } from "lucide-react";
-import Image from "next/image";
+import Footer from "@/components/Footer";
+import { CodeXml, Cpu, Database, Blocks } from "lucide-react";
 
-
-const skills = [
+const skillsData = [
     {
-        name: "Frontend",
-        icon: <CodeXml className="inline-block w-6 h-6 ml-2" />,
+        name: "Frontend Development",
+        icon: <CodeXml className="w-5 h-5 text-blue-600" />,
+        badgeBg: "bg-blue-50",
         skills: [
-            {
-                name: "HTML",
-                src: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg",
-                alt: "HTML",
-            },
-            {
-                name: "CSS",
-                src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg",
-                alt: "CSS",
-            },
-            {
-                name: "JavaScript",
-                src: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
-                alt: "JavaScript",
-            },
-            {
-                name: "React",
-                src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
-                alt: "React",
-            },
-            {
-                name: "Next.js",
-                src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg",
-                alt: "Next.js",
-            },
+            { name: "HTML", src: "https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" },
+            { name: "CSS", src: "https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" },
+            { name: "JavaScript", src: "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" },
+            { name: "React", src: "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" },
+            { name: "Next.js", src: "https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg" },
         ]
     },
     {
-        name: "Backend",
-        icon: <Cpu className="inline-block w-6 h-6 ml-2" />,
+        name: "Backend Development",
+        icon: <Cpu className="w-5 h-5 text-emerald-600" />,
+        badgeBg: "bg-emerald-50",
         skills: [
-            {
-                name: "Node.js",
-                src: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
-                alt: "Node.js",
-            },
-            {
-                name: "Express",
-                src: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png",
-                alt: "Express",
-            },
-            {
-                name: "PHP",
-                src: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg",
-                alt: "PHP",
-            },
+            { name: "Node.js", src: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" },
+            { name: "Express", src: "https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png" },
+            { name: "PHP", src: "https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" },
         ]
     },
     {
-        name: "Database",
-        icon: <Database className="inline-block w-6 h-6 ml-2" />,
+        name: "Database Systems",
+        icon: <Database className="w-5 h-5 text-indigo-600" />,
+        badgeBg: "bg-indigo-50",
         skills: [
-            {
-                name: "MySQL",
-                src: "https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png?utm_source=wikitech.wikimedia.org&utm_campaign=index&utm_content=original",
-                alt: "MySQL",
-            },
-            {
-                name: "PostgreSQL",
-                src: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg",
-                alt: "PostgreSQL",
-            },
-            {
-                name: "Supabase",
-                src: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/supabase.webp",
-                alt: "Supabase",
-            },
+            { name: "MySQL", src: "https://upload.wikimedia.org/wikipedia/labs/8/8e/Mysql_logo.png?utm_source=wikitech.wikimedia.org&utm_campaign=index&utm_content=original" },
+            { name: "PostgreSQL", src: "https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" },
+            { name: "Supabase", src: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/supabase.webp" },
         ]
     },
     {
-        name: "Tools",
-        icon: <Toolbox className="inline-block w-6 h-6 ml-2" />,
+        name: "DevOps & Tools",
+        icon: <Blocks className="w-5 h-5 text-amber-600" />,
+        badgeBg: "bg-amber-50",
         skills: [
-            {
-                name: "Git",
-                src: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg",
-                alt: "Git",
-            },
-            {
-                name: "GitHub",
-                src: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg",
-                alt: "GitHub",
-            },
-            {
-                name: "VS Code",
-                src: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
-                alt: "VS Code",
-            },
-            {
-                name: "Docker",
-                src: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg",
-                alt: "Docker",
-            },
+            { name: "Git", src: "https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" },
+            { name: "GitHub", src: "https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" },
+            { name: "VS Code", src: "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" },
+            { name: "Docker", src: "https://upload.wikimedia.org/wikipedia/commons/4/4e/Docker_%28container_engine%29_logo.svg" },
         ]
     }
-]
+];
 
 export default function Page() {
     return (
-        <div className="flex justify-center min-h-screen">
+        <div className="flex min-h-screen bg-slate-50 text-slate-800">
             <Sidebar />
-            <div className="w-full p-1 md:p-4 animate-slide-in">
-                <h1 className="text-base md:text-3xl text-slate-800 font-bold text-center rounded-full w-max mx-auto px-4 py-2 bg-gradient-to-b from-gray-200 to-gray-300">ทักษะของฉัน</h1>
-                <div className="w-full grid grid-cols-1 lg:grid-cols-2 my-4 text-base md:text-lg p-1 md:p-8 text-left gap-8">
-                    {skills.map((category, index) => (
-                        <div key={index} className="flex flex-col text-gray-600 mb-2 p-2">
-                            <h2 className="flex items-center font-bold gap-2">{category.icon} {category.name}</h2>
-                            <div className="text-gray-600 mt-2">
-                                <div className="grid grid-cols-3 gap-2">
+
+            <main className="flex-1 p-4 md:p-8 lg:p-12 animate-slide-in max-w-6xl mx-auto w-full flex flex-col justify-between">
+                <div>
+                    <div className="text-center mb-10">
+                        <h1 className="inline-flex items-center gap-2 text-2xl md:text-3xl font-black tracking-tight text-slate-900 bg-white border border-slate-200/80 px-6 py-2.5 rounded-full shadow-sm">
+                            <CodeXml className="w-5 h-5 text-blue-600" />
+                            ทักษะความเชี่ยวชาญ (My Skills)
+                        </h1>
+                        <p className="mt-3 text-slate-500 text-sm md:text-base">
+                            เครื่องมือ เทคโนโลยี และฐานข้อมูลที่ผมเลือกใช้เพื่อพัฒนาโซลูชันดิจิทัล
+                        </p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                        {skillsData.map((category, index) => (
+                            <section
+                                key={index}
+                                className="bg-white border border-slate-200/60 p-6 rounded-3xl shadow-sm hover:shadow-md transition-shadow duration-300"
+                            >
+                                <h2 className="flex items-center font-bold text-lg text-slate-900 gap-2.5 mb-5">
+                                    <div className={`p-2 rounded-xl ${category.badgeBg}`}>
+                                        {category.icon}
+                                    </div>
+                                    {category.name}
+                                </h2>
+
+                                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                                     {category.skills.map((skill, skillIndex) => (
                                         <SkillCard
                                             key={skillIndex}
                                             src={skill.src}
                                             name={skill.name}
-                                            alt={skill.alt}
-                                            className="inline-block mx-1 h-16 w-auto p-1"
                                         />
                                     ))}
                                 </div>
-                            </div>
-                        </div>
-                    ))}
+                            </section>
+                        ))}
+                    </div>
                 </div>
-            </div>
+
+                <Footer />
+            </main>
         </div>
     );
-};
+}
