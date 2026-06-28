@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌟 Supanat Portfolio & Digital Innovation Workspace
 
-## Getting Started
+ระบบเว็บพอร์ตโฟลิโอและคลังผลงานส่วนตัว (Personal Portfolio Website) ที่ออกแบบในสไตล์ **Minimalist Tech / Clean Bento Grid** พัฒนาขึ้นเพื่อนำเสนอประวัติ ผลงาน นวัตกรรมดิจิทัล และทักษะความเชี่ยวชาญทางด้าน Full-Stack Development
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🛠️ Tech Stack & Tools (เครื่องมือที่ใช้พัฒนา)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+โปรเจกต์นี้เลือกใช้เทคโนโลยีทันสมัยประสิทธิภาพสูง เพื่อสถาปัตยกรรมเว็บที่รวดเร็ว ลื่นไหล และรองรับ SEO:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Framework:** Next.js 14+ (App Router / Pages Router)
+* **Language:** TypeScript / JavaScript (ESM)
+* **Styling:** Tailwind CSS (Responsive Design & Glassmorphism)
+* **Icons:** Lucide React / Native SVGs (Hydration-Safe)
+* **Environment:** Node.js
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📸 Portfolio Pages (โครงสร้างและภาพรวมแต่ละหน้า)
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Home (/)
+> <img height="480" alt="Screen Shot 2026-06-28 at 16 23 49" src="https://github.com/user-attachments/assets/b252f8c2-9d8c-427b-9108-86877501e45a" />
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. About (/about)
+> <img height="480" alt="Screen Shot 2026-06-28 at 16 24 02" src="https://github.com/user-attachments/assets/c8ab1f32-fe58-4a83-9dac-d5090daec853" />
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 3. Skills	(/me/skills)
+> <img height="480" alt="Screen Shot 2026-06-28 at 16 24 11" src="https://github.com/user-attachments/assets/fc11f8d1-e3e4-4e37-a7b3-d1cdd93596ef" />
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+### 4. Projects (/me/projects)
+> <img height="480" alt="Screen Shot 2026-06-28 at 16 24 15" src="https://github.com/user-attachments/assets/3af30cb5-8b2b-4eba-9d72-83e7d803269e" />
+
+
+### 5. Gallery (/me/gallery)
+> <img height="480" alt="Screen Shot 2026-06-28 at 16 24 20" src="https://github.com/user-attachments/assets/b4e154d5-0251-4920-a6e8-0582c6af31b6" />
+
+
+### 6. Contact (/contact)
+> <img height="480" alt="Screen Shot 2026-06-28 at 16 24 27" src="https://github.com/user-attachments/assets/63587711-96d3-436e-93c9-b6e41acb6b23" />
+
+---
